@@ -14,7 +14,7 @@ export default function ForecastTable(props: ForecastTableProps): JSX.Element | 
 
   const forecastItems = useMemo(
     () => forecast?.list?.filter((forecastItem) => formatDMMM(forecastItem.dt_txt) === date),
-    [date, forecast?.list]
+    [date]
   );
 
   if (!forecastItems?.length) return null;

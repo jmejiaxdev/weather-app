@@ -14,7 +14,7 @@ export default function Weather(props: WeatherProps): JSX.Element | null {
 
   useEffect(() => {
     (async () => cityId && (await getData(cityId)))();
-  }, [cityId, getData]);
+  }, [cityId]);
 
   if (!hasData) return null;
 

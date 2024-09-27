@@ -12,7 +12,7 @@ export default function ForecastDates(props: ForecastDatesProps): JSX.Element {
 
     const forecastDates = forecast?.list?.map((forecastItem) => formatDMMM(forecastItem.dt_txt));
     return Array.from(new Set(forecastDates));
-  }, [date, forecast?.list]);
+  }, [date]);
 
   const handleButtonClick = (date: string) => () => {
     onClick && onClick(date);

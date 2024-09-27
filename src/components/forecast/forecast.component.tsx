@@ -19,7 +19,7 @@ export default function Forecast(props: ForecastProps) {
 
   useEffect(() => {
     (async () => cityId && (await getData(cityId)))();
-  }, [cityId, getData]);
+  }, [cityId]);
 
   if (!hasData) return null;
 
