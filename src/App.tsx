@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import Home from "./pages/home/home.page";
+import { Home } from "./pages";
 import { containerStyles, footerStyles } from "./App.styles";
 
 function App() {
