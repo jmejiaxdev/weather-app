@@ -6,7 +6,7 @@ describe("getTemp function", () => {
   });
 
   test("should return an empty string for null input", () => {
-    expect(getTemp(null)).toBe("");
+    expect(getTemp()).toBe("");
   });
 
   test("should return formatted temperature for negative input", () => {
