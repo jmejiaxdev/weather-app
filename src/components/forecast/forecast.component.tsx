@@ -19,6 +19,7 @@ export default function Forecast(props: ForecastProps) {
 
   useEffect(() => {
     (async () => cityId && (await getData(cityId)))();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cityId]);
 
   if (!hasData) return null;

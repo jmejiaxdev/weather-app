@@ -14,6 +14,7 @@ export default function ForecastTable(props: ForecastTableProps): JSX.Element | 
 
   const forecastItems = useMemo(
     () => forecast?.list?.filter((forecastItem) => formatDMMM(forecastItem.dt_txt) === date),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [date]
   );
 

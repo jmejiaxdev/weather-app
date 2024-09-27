@@ -14,6 +14,7 @@ export default function Weather(props: WeatherProps): JSX.Element | null {
 
   useEffect(() => {
     (async () => cityId && (await getData(cityId)))();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cityId]);
 
   if (!hasData) return null;
